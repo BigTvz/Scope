@@ -22,3 +22,9 @@ export interface UserSettings {
 export interface ExchangeRates {
   [key: string]: number;
 }
+
+export interface User {
+  id: string;
+  username: string;
+  password?: string; // Optional because we might not want to pass it around everywhere in state
+}
